@@ -47,7 +47,7 @@ setup(
     keywords='naming conventions labels config convention name parsing parse QT pyqt',
     entry_points={
         'console_scripts': [
-            'nomenclateUI = nomenclateUI.run',
+            'nomenclateUI = nomenclateUI.run.create()',
         ]
     },
     classifiers=[
