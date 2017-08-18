@@ -1,2 +1,1 @@
-include nomenclate/core/env.yml
 include requirements.txt

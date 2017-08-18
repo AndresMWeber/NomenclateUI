@@ -5,8 +5,8 @@ from setuptools import setup, find_packages
 
 __author__ = 'Andres Weber'
 __author_email__ = 'andresmweber@gmail.com'
-__package__ = 'nomenclate'
-__url__ = 'https://github.com/andresmweber/nomenclate'
+__package__ = 'NomenclateUI'
+__url__ = 'https://github.com/andresmweber/NomenclateUI'
 
 main_ns = {}
 with open(convert_path('%s/version.py' % __package__)) as ver_file:
@@ -18,9 +18,6 @@ with codecs.open(join(abspath(dirname(__file__)), 'README.rst'), encoding='utf-8
 description = 'A tool for generating strings based on a preset naming convention.',
 
 install_requires = [
-    'python-dateutil',
-    'PyYAML',
-    'six'
 ]
 
 tests_requires = [
@@ -40,7 +37,6 @@ setup(
     name=__package__,
     version=main_ns['__version__'],
     packages=find_packages(),
-    package_data={'configYML': ['nomenclate/core/*.yml']},
     include_package_data=True,
     url=__url__,
     license='MIT',
@@ -48,10 +44,10 @@ setup(
     author_email=__author_email__,
     description=description,
     long_description=long_description,
-    keywords='naming conventions labels config convention name parsing parse',
+    keywords='naming conventions labels config convention name parsing parse QT pyqt',
     entry_points={
         'console_scripts': [
-            'nomenclate = nomenclate.app:run',
+            'nomenclateUI = nomenclateUI.run',
         ]
     },
     classifiers=[
